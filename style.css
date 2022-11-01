@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply bg-gray-100 p-8;
+}
+
+.custom-h1 {
+  @apply text-3xl flex justify-center p-4 font-bold;
+}
+
+.input-container {
+  @apply mt-4 flex flex-row justify-center mb-3;
+}
+
+.input {
+  @apply border border-gray-300 rounded-md shadow-sm mr-3;
+  @apply placeholder:p-1;
+}
+
+.btn {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.emojicards {
+  @apply flex flex-row justify-center flex-wrap;
+}
+
+.emojicard{
+  @apply m-2 p-2 border border-gray-300 rounded-md shadow-sm flex flex-col justify-center items-center w-32 flex-grow break-all bg-white;
+  @apply hover:bg-gray-100 cursor-pointer transition duration-500 ease-in-out hover:scale-110 transform hover:shadow-lg hover:border-blue-500;
+}
